@@ -44,11 +44,34 @@ namespace Navegar_Facebook
                 Thread.Sleep(2000);
                 driverassoc.FindElement(By.XPath("//*[@name='login']")).Click();
                 Thread.Sleep(2000);
+                ///class="b6ax4al1"
+                //
+                bool agrgados = listaAgregados(ref error, driverassoc);
+
             }
             catch (Exception ex)
             {
                 error = ex.Message;
                 Console.WriteLine(error);
+                //throw;
+            }
+        }
+        public static bool listaAgregados( ref string error, IWebDriver driverassoc)
+        {
+            try
+            {
+                driverassoc.FindElement(By.XPath("//*[@class='alzwoclg t5n4vrf6 om3e55n1 mfclru0v']")).Click();
+                Thread.Sleep(2000);
+
+                driverassoc.FindElement(By.XPath("//*[@class='i85zmo3j bdao358l alzwoclg jez8cy9q p4zypb3t om3e55n1 a26p89d5 r227ecj6 gt60zsk1''")).Click();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+                Console.WriteLine(error);
+                return false;
                 //throw;
             }
         }
