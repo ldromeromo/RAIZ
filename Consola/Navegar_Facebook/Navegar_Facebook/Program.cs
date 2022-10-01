@@ -34,7 +34,7 @@ namespace Navegar_Facebook
                 ChromeOptions opt = new ChromeOptions();
                 opt.AddUserProfilePreference("disable-popup-blocking", "true");
                 opt.AddArgument("--start-maximized");
-                driverassoc = new ChromeDriver(opt); // Environment.CurrentDirectory);xxx
+                driverassoc = new ChromeDriver(opt); // Environment.CurrentDirectory);xxx  xxx
 
                 //Login in
                 driverassoc.Navigate().GoToUrl("https://www.facebook.com/"); // ConfigurationManager.AppSettings["urlmaui"]);
