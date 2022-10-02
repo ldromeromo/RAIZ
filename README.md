@@ -1,2 +1,2 @@
 # RAIZ
-RAIZ - Personal Project
+RAIZ - Proyecto personal
