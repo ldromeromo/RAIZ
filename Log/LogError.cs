@@ -33,7 +33,7 @@ namespace Log
                     cmd.ExecuteReader();
 
                     cn.Close();
-                }
+                } 
             }
             catch (Exception e)
             {
